@@ -16,7 +16,7 @@ function Employee(name, age, jobTitle) {
 		console.log(`Hello, my name is ${name}, I am ${age} years old, and my job title is ${jobTitle}.`)
 	}
 }
-
+Employee.prototype = Object.create(Person.prototype);
 // Do not change code below this line
 window.Person = Person;
 window.Employee = Employee;
